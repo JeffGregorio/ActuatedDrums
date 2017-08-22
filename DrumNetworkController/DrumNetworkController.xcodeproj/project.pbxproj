@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F60C4191EE31819003EAE84 /* RtMidi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F60C4171EE31819003EAE84 /* RtMidi.cpp */; };
+		1F60C41B1EE375BA003EAE84 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F60C41A1EE375BA003EAE84 /* CoreMIDI.framework */; };
+		1F60C41D1EE3787B003EAE84 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F60C41C1EE3787B003EAE84 /* CoreAudio.framework */; };
+		1F60C4211EE47C7D003EAE84 /* DrumNetworkController.app in Copy Files */ = {isa = PBXBuildFile; fileRef = 1FC811971E536AA100BEA427 /* DrumNetworkController.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1F78A8711EDF5805005A9B67 /* NodeWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1F78A86F1EDF5805005A9B67 /* NodeWindowController.mm */; };
+		1F78A8721EDF5805005A9B67 /* NodeWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F78A8701EDF5805005A9B67 /* NodeWindowController.xib */; };
+		1FC8119C1E536AA100BEA427 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1FC8119B1E536AA100BEA427 /* AppDelegate.mm */; };
+		1FC8119F1E536AA100BEA427 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC8119E1E536AA100BEA427 /* main.m */; };
+		1FC811A11E536AA200BEA427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FC811A01E536AA200BEA427 /* Assets.xcassets */; };
+		1FC811A41E536AA200BEA427 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FC811A21E536AA200BEA427 /* MainMenu.xib */; };
+		1FC811B01E536B5A00BEA427 /* liblo.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC811AF1E536B5A00BEA427 /* liblo.7.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F60C41E1EE47B0F003EAE84 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = /Applications;
+			dstSubfolderSpec = 0;
+			files = (
+				1F60C4211EE47C7D003EAE84 /* DrumNetworkController.app in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1F60C4171EE31819003EAE84 /* RtMidi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RtMidi.cpp; sourceTree = "<group>"; };
+		1F60C4181EE31819003EAE84 /* RtMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtMidi.h; sourceTree = "<group>"; };
+		1F60C41A1EE375BA003EAE84 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		1F60C41C1EE3787B003EAE84 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		1F60C4221EE4A21C003EAE84 /* DrumNetworkController.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DrumNetworkController.entitlements; sourceTree = "<group>"; };
+		1F78A86E1EDF5805005A9B67 /* NodeWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NodeWindowController.h; path = DrumNetworkController/NodeWindowController.h; sourceTree = "<group>"; };
+		1F78A86F1EDF5805005A9B67 /* NodeWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = NodeWindowController.mm; path = DrumNetworkController/NodeWindowController.mm; sourceTree = "<group>"; };
+		1F78A8701EDF5805005A9B67 /* NodeWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NodeWindowController.xib; path = DrumNetworkController/NodeWindowController.xib; sourceTree = "<group>"; };
+		1FC811971E536AA100BEA427 /* DrumNetworkController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrumNetworkController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FC8119A1E536AA100BEA427 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1FC8119B1E536AA100BEA427 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		1FC8119E1E536AA100BEA427 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1FC811A01E536AA200BEA427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FC811A31E536AA200BEA427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1FC811A51E536AA200BEA427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FC811AF1E536B5A00BEA427 /* liblo.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liblo.7.dylib; path = ../../../../../../opt/local/lib/liblo.7.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FC811941E536AA100BEA427 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F60C41D1EE3787B003EAE84 /* CoreAudio.framework in Frameworks */,
+				1F60C41B1EE375BA003EAE84 /* CoreMIDI.framework in Frameworks */,
+				1FC811B01E536B5A00BEA427 /* liblo.7.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FC8118E1E536AA100BEA427 = {
+			isa = PBXGroup;
+			children = (
+				1F78A86E1EDF5805005A9B67 /* NodeWindowController.h */,
+				1F78A86F1EDF5805005A9B67 /* NodeWindowController.mm */,
+				1F78A8701EDF5805005A9B67 /* NodeWindowController.xib */,
+				1FC811991E536AA100BEA427 /* DrumNetworkController */,
+				1FC811981E536AA100BEA427 /* Products */,
+				1FC811AE1E536B5A00BEA427 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1FC811981E536AA100BEA427 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FC811971E536AA100BEA427 /* DrumNetworkController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FC811991E536AA100BEA427 /* DrumNetworkController */ = {
+			isa = PBXGroup;
+			children = (
+				1F60C4221EE4A21C003EAE84 /* DrumNetworkController.entitlements */,
+				1FC8119A1E536AA100BEA427 /* AppDelegate.h */,
+				1FC8119B1E536AA100BEA427 /* AppDelegate.mm */,
+				1FC811A01E536AA200BEA427 /* Assets.xcassets */,
+				1FC811A21E536AA200BEA427 /* MainMenu.xib */,
+				1FC811A51E536AA200BEA427 /* Info.plist */,
+				1FC8119D1E536AA100BEA427 /* Supporting Files */,
+			);
+			path = DrumNetworkController;
+			sourceTree = "<group>";
+		};
+		1FC8119D1E536AA100BEA427 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FC8119E1E536AA100BEA427 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1FC811AE1E536B5A00BEA427 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F60C41C1EE3787B003EAE84 /* CoreAudio.framework */,
+				1F60C41A1EE375BA003EAE84 /* CoreMIDI.framework */,
+				1F60C4171EE31819003EAE84 /* RtMidi.cpp */,
+				1F60C4181EE31819003EAE84 /* RtMidi.h */,
+				1FC811AF1E536B5A00BEA427 /* liblo.7.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FC811961E536AA100BEA427 /* DrumNetworkController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FC811A81E536AA200BEA427 /* Build configuration list for PBXNativeTarget "DrumNetworkController" */;
+			buildPhases = (
+				1FC811931E536AA100BEA427 /* Sources */,
+				1FC811941E536AA100BEA427 /* Frameworks */,
+				1FC811951E536AA100BEA427 /* Resources */,
+				1F60C41E1EE47B0F003EAE84 /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrumNetworkController;
+			productName = DrumNetworkController;
+			productReference = 1FC811971E536AA100BEA427 /* DrumNetworkController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FC8118F1E536AA100BEA427 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Jeff Gregorio";
+				TargetAttributes = {
+					1FC811961E536AA100BEA427 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = G6U7FFA9BT;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 1FC811921E536AA100BEA427 /* Build configuration list for PBXProject "DrumNetworkController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FC8118E1E536AA100BEA427;
+			productRefGroup = 1FC811981E536AA100BEA427 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FC811961E536AA100BEA427 /* DrumNetworkController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FC811951E536AA100BEA427 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F78A8721EDF5805005A9B67 /* NodeWindowController.xib in Resources */,
+				1FC811A11E536AA200BEA427 /* Assets.xcassets in Resources */,
+				1FC811A41E536AA200BEA427 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FC811931E536AA100BEA427 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F60C4191EE31819003EAE84 /* RtMidi.cpp in Sources */,
+				1F78A8711EDF5805005A9B67 /* NodeWindowController.mm in Sources */,
+				1FC8119F1E536AA100BEA427 /* main.m in Sources */,
+				1FC8119C1E536AA100BEA427 /* AppDelegate.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1FC811A21E536AA200BEA427 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FC811A31E536AA200BEA427 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FC811A61E536AA200BEA427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1FC811A71E536AA200BEA427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1FC811A91E536AA200BEA427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G6U7FFA9BT;
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				INFOPLIST_FILE = DrumNetworkController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-D__MACOSX_CORE__",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.drexel.metlab.DrumNetworkController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		1FC811AA1E536AA200BEA427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G6U7FFA9BT;
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				INFOPLIST_FILE = DrumNetworkController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-D__MACOSX_CORE__",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.drexel.metlab.DrumNetworkController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FC811921E536AA100BEA427 /* Build configuration list for PBXProject "DrumNetworkController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FC811A61E536AA200BEA427 /* Debug */,
+				1FC811A71E536AA200BEA427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FC811A81E536AA200BEA427 /* Build configuration list for PBXNativeTarget "DrumNetworkController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FC811A91E536AA200BEA427 /* Debug */,
+				1FC811AA1E536AA200BEA427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FC8118F1E536AA100BEA427 /* Project object */;
+}
